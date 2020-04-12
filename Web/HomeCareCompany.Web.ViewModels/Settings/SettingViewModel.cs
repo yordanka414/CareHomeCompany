@@ -1,9 +1,8 @@
 ﻿namespace HomeCareCompany.Web.ViewModels.Settings
 {
+    using AutoMapper;
     using HomeCareCompany.Data.Models;
     using HomeCareCompany.Services.Mapping;
-
-    using AutoMapper;
 
     public class SettingViewModel : IMapFrom<Setting>, IHaveCustomMappings
     {

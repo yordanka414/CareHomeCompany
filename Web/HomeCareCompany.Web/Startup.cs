@@ -1,5 +1,6 @@
 ﻿namespace HomeCareCompany.Web
 {
+    using System.Configuration;
     using System.Reflection;
 
     using HomeCareCompany.Data;
@@ -53,7 +54,6 @@
                         options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
                     });
             services.AddRazorPages();
-
             services.AddSingleton(this.configuration);
 
             // Data repositories
@@ -98,7 +98,7 @@
 
             app.UseAuthentication();
             app.UseAuthorization();
-
+           
             app.UseEndpoints(
                 endpoints =>
                     {
