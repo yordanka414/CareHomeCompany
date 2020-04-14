@@ -33,6 +33,8 @@ namespace HomeCareCompany.Data.Models
 
         public Address Address { get; set; }
 
+        public virtual ICollection<ApplicationUserCustomer> ApplicationUserCustomers { get; set; }
+
         public virtual ICollection<IdentityUserRole<string>> Roles { get; set; }
 
         public virtual ICollection<IdentityUserClaim<string>> Claims { get; set; }

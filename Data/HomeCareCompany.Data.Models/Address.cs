@@ -1,8 +1,8 @@
 ﻿// ReSharper disable VirtualMemberCallInConstructor
-using HomeCareCompany.Data.Common.Models;
-
 namespace HomeCareCompany.Data.Models
 {
+    using HomeCareCompany.Data.Common.Models;
+
     public class Address : BaseDeletableModel<int>
     {
         public string Country { get; set; }

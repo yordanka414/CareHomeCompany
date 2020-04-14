@@ -28,6 +28,18 @@
 
         public DbSet<Address> Addresses { get; set; }
 
+        public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<FullName> FullNames { get; set; }
+
+        public DbSet<Marsheet> Marsheets { get; set; }
+
+        public DbSet<Medication> Medications { get; set; }
+
+        public DbSet<Profile> Profiles { get; set; }
+
+        public DbSet<ApplicationUserCustomer> ApplicationUserCustomers { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)

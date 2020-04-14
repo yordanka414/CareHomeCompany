@@ -1,8 +1,9 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-namespace HomeCareCompany.Data.Migrations
+﻿namespace HomeCareCompany.Data.Migrations
 {
+    using System;
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     public partial class AddressEntity : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -26,7 +27,7 @@ namespace HomeCareCompany.Data.Migrations
                     Country = table.Column<string>(nullable: true),
                     Town = table.Column<string>(nullable: true),
                     Street = table.Column<string>(nullable: true),
-                    PostCode = table.Column<string>(nullable: true)
+                    PostCode = table.Column<string>(nullable: true),
                 },
                 constraints: table =>
                 {
