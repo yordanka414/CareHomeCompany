@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HomeCareCompany.Data.Models
+﻿namespace HomeCareCompany.Data.Models
 {
     public class ApplicationUserCustomer
     {

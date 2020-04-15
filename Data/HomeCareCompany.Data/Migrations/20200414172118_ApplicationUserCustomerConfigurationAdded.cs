@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-
-namespace HomeCareCompany.Data.Migrations
+﻿namespace HomeCareCompany.Data.Migrations
 {
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     public partial class ApplicationUserCustomerConfigurationAdded : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -11,7 +11,7 @@ namespace HomeCareCompany.Data.Migrations
                 columns: table => new
                 {
                     CustomerId = table.Column<int>(nullable: false),
-                    ApplicationUserId = table.Column<string>(nullable: false)
+                    ApplicationUserId = table.Column<string>(nullable: false),
                 },
                 constraints: table =>
                 {

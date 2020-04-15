@@ -1,8 +1,9 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-namespace HomeCareCompany.Data.Migrations
+﻿namespace HomeCareCompany.Data.Migrations
 {
+    using System;
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     public partial class OtherEntitiesAdded : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +19,7 @@ namespace HomeCareCompany.Data.Migrations
                     IsDeleted = table.Column<bool>(nullable: false),
                     DeletedOn = table.Column<DateTime>(nullable: true),
                     FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true)
+                    LastName = table.Column<string>(nullable: true),
                 },
                 constraints: table =>
                 {
@@ -39,7 +40,7 @@ namespace HomeCareCompany.Data.Migrations
                     Dose = table.Column<int>(nullable: false),
                     Form = table.Column<string>(nullable: true),
                     LongTermMedication = table.Column<bool>(nullable: false),
-                    Instructions = table.Column<string>(nullable: true)
+                    Instructions = table.Column<string>(nullable: true),
                 },
                 constraints: table =>
                 {
@@ -58,7 +59,7 @@ namespace HomeCareCompany.Data.Migrations
                     DeletedOn = table.Column<DateTime>(nullable: true),
                     DateOfBirth = table.Column<DateTime>(nullable: false),
                     FullNameId = table.Column<int>(nullable: false),
-                    AddressId = table.Column<int>(nullable: false)
+                    AddressId = table.Column<int>(nullable: false),
                 },
                 constraints: table =>
                 {
@@ -87,7 +88,7 @@ namespace HomeCareCompany.Data.Migrations
                     ModifiedOn = table.Column<DateTime>(nullable: true),
                     IsDeleted = table.Column<bool>(nullable: false),
                     DeletedOn = table.Column<DateTime>(nullable: true),
-                    ProfileId = table.Column<int>(nullable: false)
+                    ProfileId = table.Column<int>(nullable: false),
                 },
                 constraints: table =>
                 {
@@ -109,7 +110,7 @@ namespace HomeCareCompany.Data.Migrations
                     IsDeleted = table.Column<bool>(nullable: false),
                     DeletedOn = table.Column<DateTime>(nullable: true),
                     CreatedOn = table.Column<DateTime>(nullable: false),
-                    ModifiedOn = table.Column<DateTime>(nullable: true)
+                    ModifiedOn = table.Column<DateTime>(nullable: true),
                 },
                 constraints: table =>
                 {
